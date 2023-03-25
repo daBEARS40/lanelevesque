@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Lane Levesque</title>
+        <title>Gauge NFT</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <script src="lib/font-awesome.js"></script>
+        <script src="lib/require.js" data-main="lib/common.js"></script>
+        <script>
+            var NFT;
+            function start() {
+                require(["js/Application.js"], (Application) => {
+                    NFT = new Application();
+                    NFT.start();
+                });
+            }
+        </script>
     </head>
-    <body>
-        <div>initial commit</div>
-    </body> 
+    <body onload="start()">
+        <div class="main-header">
+            <div class="main-logo unselectable">GAUGE</div>
+            <div style="padding: 100px">
+                <i id="twitter" class="fa-brands fa-twitter social-logo"></i>
+                <i id="facebook" class="fa-brands fa-facebook social-logo"></i>
+                <i id="instagram" class="fa-brands fa-instagram social-logo"></i>
+                <i id="linkedin" class="fa-brands fa-linkedin social-logo"></i>
+            </div>
+        </div>
+        <div class="main-body"></div>
+        <div class="main-footer"></div>
+    </body>
 </html>
