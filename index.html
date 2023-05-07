@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <title>Gauge NFT</title>
-        <link href="css/main.css" rel="stylesheet" type="text/css" />
-        <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-        <script src="lib/font-awesome.js"></script>
-        <script src="lib/require.js" data-main="lib/common.js"></script>
-        <script>
-            var NFT;
-            function start() {
-                require(["js/Application.js"], (Application) => {
-                    NFT = new Application();
-                    NFT.start();
-                });
-            }
-        </script>
-    </head>
-    <body onload="start()">
-        
-        <div class="main-body">
-            <div class="main-header">
-                <div class="main-logo unselectable">GAUGE</div>
-                <div class="social-logo-container">
-                    <i id="twitter" class="fa-brands fa-twitter social-logo"></i>
-                    <i id="facebook" class="fa-brands fa-facebook social-logo"></i>
-                    <i id="instagram" class="fa-brands fa-instagram social-logo"></i>
-                    <i id="linkedin" class="fa-brands fa-linkedin social-logo"></i>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>SOL MOON RISING ✨</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <script src="lib/font-awesome.js"></script>
+    <script src="lib/require.js" data-main="lib/common.js"></script>
+    <script>
+        var Sol;
+        function start() {
+            require(["js/Application.js"], (Application) => {
+                Sol = new Application({});
+                Sol.init();
+            });
+        }
+    </script>
+</head>
+
+<body onload="start()">
+
+    <div class="main-body">
+        <div class="main-header">
+            <div class="main-logo unselectable">SOL MOON RISING ✨</div>
+            <div class="menu">
+                <div id="header-mint" class="border-right link menu-btn" style="font-style: italic; color: #FF6ABE">MINT
                 </div>
+                <div id="header-about" class="border-right link menu-btn">About</div>
+                <div id="header-white" class="border-right link menu-btn">Whitepaper</div>
+                <div id="header-learn" class="border-right link menu-btn">Learn</div>
+                <div id="header-benefits" class="border-right link menu-btn">Benefits</div>
+                <div id="header-merch" class="link menu-btn">Merch</div>
             </div>
-            <div class="sliding-background">
-                <div class="sliding-container">
-                    <img src="fragments/assets/boredapeheader.jpg" class="ape" />
-                </div>
-                <div class="sliding-container">
-                    <img src="fragments/assets/boredapeheader.jpg" class="ape" />
-                </div>
-            </div>
-            <div class="centerbox">
-                <div class="mint-btn">
-                    MINT
-                </div>
-            </div>
-            <div class="main-footer">
-                <div id="copyright" class="footer-box unselectable">
-                    <i class="fa-regular fa-copyright" style="padding: 5px; padding-bottom: 0;"></i>
-                    <div style="padding: 5px; padding-bottom: 0;">2023, Gauge</div>
-                </div>
-                <div class="footer-box unselectable">
-                    <div>It's ya boi</div>
-                </div>
-                <div class="footer-box">
-                    <div style="padding: 5px; padding-bottom: 0;" class="link">terms and conditions</div>
-                    <div style="padding: 5px; padding-bottom: 0;" class="link">privacy policy</div>
-                </div>
+            <div class="social-logo-container">
+                <i id="twitter" class="fa-brands fa-twitter social-logo"></i>
+                <i id="twitter" class="fa-brands fa-discord social-logo"></i>
             </div>
         </div>
-        
-    </body>
+        <div class="sliding-background">
+            <video autoplay muted loop id="bg-vid">
+                <source src="fragments/assets/bg_vid.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="main-content">
+            <div id="centerbox" class="centerbox">
+                <div id="mint" class="mint-btn">
+                    <div>MINT</div>
+                </div>
+                <div id="about"></div>
+                <div id="white"></div>
+                <div id="learn"></div>
+                <div id="benefits"></div>
+                <div id="merch"></div>
+            </div>
+        </div>
+        <div class="main-footer" style="font-family: goldenbook-light">
+            <div id="copyright" class="footer-box unselectable" style="display: flex; align-items: center">
+                <i class=" fa-regular fa-copyright"></i>
+                <div style="padding-left: 3px;">2023 SOL MOON RISING</div>
+            </div>
+            <div class="footer-box unselectable">
+                <div>For conscious collectors beginning their journey in the NFT space ✨ Each mint grants the holder to
+                    one unique NFT and another NFT based on them! Powered by Solana 🚀</div>
+            </div>
+            <div class="footer-box">
+                <div style="padding: 5px; padding-bottom: 3px;" class="link">legal</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>
